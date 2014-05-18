@@ -1,0 +1,49 @@
+html { 
+  background: url(giphy.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 6em;
+	color: yellow;
+	text-align: center;
+	line-height: 125px;
+	text-shadow: 10px 10px #F74F4F;
+	margin-top: 200px;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+ h1 span#glitch {
+	text-shadow: 10px 10px #FF00BB;
+} 
+
+h1 span#it {
+	text-shadow: 10px 10px #00CCB4;
+}
+
+
+a {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 2em;
+	color: white;
+	text-shadow: 4px 4px black;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+
+}
+
+a:hover {
+	color: #00CCB4;
+	text-shadow: 4px 4px #FF00BB;
+}
+
+audio {
+	display: none;
+}
+
