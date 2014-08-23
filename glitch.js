@@ -8,7 +8,7 @@ $(document).ready(function(){
 
   $('.instructions').show(function() {
 
-    $('.instructions').delay(3500).fadeOut();  
+  $('.instructions').delay(3500).fadeOut();  
 
   }); 
   
@@ -62,6 +62,8 @@ $(document).ready(function(){
 
       $("#undo_button").show();
 
+      $("#save_button").show();
+
       //
 
 
@@ -101,7 +103,7 @@ $(document).ready(function(){
         console.log(previous_src_states.length);
 
       
-      if (previous_src_states.length > 20 - 1) {
+      if (previous_src_states.length > 25 - 1) {
         previous_src_states.shift();
       } // stores previous state in array
 
@@ -115,10 +117,11 @@ $(document).ready(function(){
 
 
   $('#undo_button').on('click', function(ev) {
+    
     var last_state = previous_src_states[last_state];
     
-    if (previous_src_states.length === 1) {
-      alert("Sorry. You can only have 20 undo's, my friend");
+    if (previous_src_states.length < 1) {
+      alert("Sorry. No more undo's for you, my friend");
     };
     
     var last_state = previous_src_states.pop();

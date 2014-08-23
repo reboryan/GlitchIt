@@ -35,7 +35,7 @@ header h1 span {
 	margin: 0 auto;
 	margin-top: 40px;
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
 .image_container img {
@@ -86,9 +86,29 @@ img {
 	outline: none;
 }
 
+.button_container {
+	position: absolute;
+	display: inline;
+	width: 40%;
+	margin-left: 30%;
+	margin-left: 30%;
+	height: 15px;
+}
+
+
 #undo_button {
 	z-index: 20;
-	margin-left: 435px;
+	outline: none;
+	display: none;
+	float: left;
+	position: relative;
+}
+
+#save_button {
+	z-index: 20;
+	outline: none;
+	display: none;
+	float: right;
 	position: relative;
 }
 
